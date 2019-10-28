@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+    </head>
+    <body>
+       
+        <div style="float: left;width: 80%;">
+            <h3>Jeu de chi-fu-mi</h3>
+            <form action="#" method="POST">
+                <select>
+                    <optgroup label="pierre, feuille, ou ciseaux ">
+                        <option value="">Faites votre choix</option>
+                        <option value="pierre">Pierre</option>
+                        <option value="feuille">Feuille</option>
+                        <option value="ciseaux">Ciseaux</option>
+                    </optgroup>
+                </select>    
+                <button type="button" onclick="playChifumi();">Je joue</button><br>
+                <span style="color:red"></span><br>
+                <table>
+                    <tr>
+                        <th id="mc" style="width: 200px;"></th>
+                        <th id="oc"  style="width: 200px;"></th>
+                    </tr>
+                    <tr>
+                        <td id="im"></td>
+                        <td id="io"></td>
+                    </tr>
+                </table>
+                <p style="font-size:30px;font-weight: bold;"></p>
+            </form>
+        </div>
+        <div style="float: right;width: 18%;">
+                <h3>Score</h3>
+            <table cellpadding="10px" border="1px" style="border-collapse: collapse;">
+                <tr>
+                    <th id="moi">Moi</th>
+                    <th>Ordinateur</th>
+                </tr>
+                <tr>
+                    <td id="sm">0</td>
+                    <td id="so">0</td>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
