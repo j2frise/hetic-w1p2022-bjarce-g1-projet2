@@ -1,5 +1,5 @@
 var player = prompt("Veuiilez inscrire votre nom de joueur");
-if(player == "")
+if(!player)
 {
     player = "joueur 1";
 }
